@@ -1,0 +1,155 @@
+[
+  {
+    "warehouse": "Warehouse Number 1",
+    "address": "469 King St W",
+    "city": "Toronto, ON",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 2",
+    "address": "469 King St W",
+    "city": "Vancouver, BC",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 3",
+    "address": "469 King St W",
+    "city": "Calgary, AB",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 4",
+    "address": "469 King St W",
+    "city": "Toronto, ON",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 5",
+    "address": "469 King St W",
+    "city": "Vancouver, BC",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 6",
+    "address": "469 King St W",
+    "city": "Calgary, AB",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 7",
+    "address": "469 King St W",
+    "city": "Toronto, ON",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 8",
+    "address": "469 King St W",
+    "city": "Vancouver, BC",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  },
+  {
+    "warehouse": "Warehouse Number 9",
+    "address": "469 King St W",
+    "city": "Calgary, AB",
+    "country": "Canada",
+    "contact": "Mara Weinberg",
+    "role": "Warehouse Manager",
+    "phone": "+1 416 678 2345",
+    "email": "weinberg@instack.com",
+    "categories": [
+      "Industrial",
+      "Automotive",
+      "Heavy",
+      "Mechanical",
+      "Engineering"
+    ]
+  }
+]

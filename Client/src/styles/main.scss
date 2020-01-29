@@ -1,0 +1,32 @@
+html * {
+  margin: unset;
+  padding: unset;
+  font-family: "AvenirRegular";
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/typography";
+@import "./partials/generics";
+@import "./partials/location";
+@import "./partials/create";
+@import "./partials/inventory";
+@import "./partials/invetoryDetails";
+@import "./partials/warehouseInfo";
+@import "./partials/productDetail";
+@import "./partials/locationCreateNew";
+@import "./partials/header";
+@import "./partials/invetoryDetails";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}

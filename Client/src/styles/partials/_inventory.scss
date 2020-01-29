@@ -1,0 +1,198 @@
+* {
+  font-family: "AvenirRegular";
+  box-sizing: border-box;
+}
+
+.inventory {
+  &__title {
+    font-family: "AvenirBold";
+    margin: 32px 0 16px 5vw;
+  }
+
+  &__search {
+    @include input;
+    margin: 16px 0 32px 5vw;
+    width: 252px;
+    padding-left: 48px;
+    background-image: url(../assets/icons/SVG/Icon-search.svg);
+    background-repeat: no-repeat;
+    background-position: 24px 16px;
+  }
+
+  &__btn {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 8vw;
+    bottom: 15vh;
+    background-color: $darkblue;
+    border: none;
+    background-image: url(../assets/icons/SVG/Icon-add.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+  }
+
+  &__table {
+    padding: 0 5vw;
+
+    &-header {
+      &--nonMobile {
+        display: none;
+      }
+      &-cell--mobile {
+        margin: 24px 0 16px 0;
+      }
+    }
+
+    &-row {
+      border-bottom: 1px solid $mercury;
+      padding-top: 24px;
+      position: relative;
+
+      &-cell {
+        display: flex;
+        flex-direction: column;
+        margin: 16px 0 24px 0;
+
+        &--name {
+          font-family: "AvenirDemiBold";
+          text-decoration: none;
+          color: black;
+          margin-bottom: 16px;
+        }
+      }
+
+      &-cells--hidden {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      &-kebab {
+        position: absolute;
+        top: 24px;
+        right: 0;
+      }
+
+      &-dropdown {
+        position: absolute;
+        top: 48px;
+        right: 0;
+        width: 161px;
+        height: 44px;
+        border: 1px solid $mercury;
+        background-color: $white;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@include medium {
+  .inventory {
+    display: grid;
+    grid-template-columns: 3.125vw auto auto 3.125vw;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      ". title search ."
+      ". table table .";
+
+    &__btn {
+      right: 13vw;
+    }
+
+    &__title {
+      grid-area: title;
+      margin: 48px 0;
+    }
+
+    &__search {
+      grid-area: search;
+      margin-top: 40px;
+      justify-self: end;
+    }
+
+    &__table {
+      grid-area: table;
+      padding: 0;
+
+      &-header {
+        &--nonMobile {
+          display: block;
+          border: none;
+        }
+        &-cell--mobile {
+          display: none;
+        }
+      }
+
+      &-row,
+      &-row-cells--regular {
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        display: grid;
+        grid-template-columns: 29.17vw 13.02vw 13.02vw 9.9vw 13.02vw;
+        column-gap: 3.125vw;
+        padding: 0;
+
+        &-cells--regular {
+          grid-template-rows: 100px;
+        }
+      }
+
+      &-row {
+        &-cell {
+          align-self: center;
+        }
+
+        &-kebab {
+          top: 44px;
+          right: 16px;
+        }
+
+        &-dropdown {
+          top: 68px;
+          right: 10px;
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include huge {
+  .inventory {
+    grid-template-columns: 12.5vw auto auto 12.5vw;
+
+    &__btn {
+      width: 80px;
+      height: 80px;
+      background-size: 24px;
+    }
+
+    &__table {
+      &-row,
+      &-row-cells--regular {
+        grid-template-columns: 23.89vw 11.11vw 11.11vw 12.78vw 11.11vw;
+        column-gap: 1.67vw;
+
+        &-cells--regular {
+          grid-template-rows: 80px;
+        }
+
+        &-kebab {
+          top: 33px;
+        }
+
+        &-dropdown {
+          top: 37px;
+        }
+      }
+    }
+  }
+}

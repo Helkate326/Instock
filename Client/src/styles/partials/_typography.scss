@@ -1,0 +1,97 @@
+/*This stylesheet contains the font-sizes for all the elements*/
+
+h1 {
+  //Header
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h2 {
+  //Subheader
+  font-size: 14px;
+  line-height: 22px;
+}
+
+h3,
+h4,
+p,
+li {
+  //paragraphs, Lists & contact information
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h5,
+label {
+  //LABELS
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "AvenirDemiBold";
+  color: $silver;
+}
+
+@include medium {
+  h1 {
+    //Header
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h3 {
+    //Subheader
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h4,
+  p,
+  li {
+    //paragraphs, Lists & contact information
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  h5 {
+    //LABELS
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+@include large {
+  h1 {
+    //Header
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  h3 {
+    //Subheader
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h4,
+  p,
+  li {
+    //paragraphs, Lists & contact information
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  h5 {
+    //LABELS
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

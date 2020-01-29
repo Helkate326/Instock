@@ -1,0 +1,215 @@
+.location {
+  margin: 0 5vw;
+  &__header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-family: "AvenirBold";
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__search {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    border: 1px grey solid;
+    width: 90%;
+    margin-bottom: 32px;
+    &--icon {
+      padding: 2% 2% 2% 5%;
+    }
+    &--input {
+      width: 85%;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      border: none;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        font-size: 13px;
+        line-height: 18px;
+        font-family: "AvenirRegular";
+      }
+    }
+  }
+
+  &__content {
+    &-detail {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: "AvenirRegular";
+      font-size: 13px;
+      line-height: 18px;
+      &--left {
+        &--geo {
+          margin-bottom: 25px;
+          &--warehouse {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 22px;
+            font-family: "AvenirDemiBold";
+          }
+        }
+        &--manager {
+          margin-bottom: 25px;
+          &--name {
+            margin-bottom: 10px;
+          }
+        }
+        &--contact {
+          margin-bottom: 25px;
+          &--phone {
+            margin-bottom: 10px;
+          }
+        }
+        &--categories {
+          margin-bottom: 24px;
+          &--lineOne {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      &--right {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &-seperater {
+      margin: 0;
+    }
+  }
+  &__label {
+    display: none;
+  }
+}
+
+.desktop__title {
+  display: none;
+}
+
+.warehouse__link {
+  text-decoration: none;
+}
+
+.location__add-icon {
+  background-color: #002f5f;
+  width: 60px;
+  height: 60px;
+  padding: 0.8%;
+  border-radius: 50%;
+  // float: right;
+  position: fixed;
+  // use this to control position
+  bottom: 15vh;
+  right: 8vw;
+}
+.location__add {
+  background: none;
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.location__add::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+@include medium {
+  .location {
+    margin: 0 3.125vw;
+    &__header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      margin-top: 48px;
+      margin-bottom: 48px;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    &__search {
+      margin-top: 48px;
+      margin-bottom: 48px;
+      width: 30vw;
+      &--input {
+        &::placeholder {
+          font-size: 14px;
+          line-height: 22px;
+        }
+      }
+    }
+
+    &__content {
+      &-detail {
+        &--left {
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          font-size: 14px;
+          line-height: 22px;
+          &--wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-bottom: 24px;
+          }
+
+          &--geo {
+            margin-bottom: 32px;
+            &--warehouse {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include huge {
+  .location {
+    margin: 0 12.5vw;
+
+    &__search {
+      width: 20vw;
+    }
+
+    &__content {
+      &-detail {
+        &--left {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          &--geo {
+            // display: flex;
+          }
+          &--wrapper {
+            width: 48vw;
+          }
+        }
+      }
+    }
+  }
+
+  .desktop__title {
+    display: flex;
+    margin-bottom: 32px;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: "AvenirBold";
+    color: $silver;
+  }
+}

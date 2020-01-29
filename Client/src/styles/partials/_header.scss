@@ -1,0 +1,134 @@
+@include small {
+  .header {
+    background: $black;
+    padding: 16px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    &-logo {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__link {
+      width: 100%;
+
+      &-logo {
+        width: 100%;
+      }
+
+      &-inventory {
+        width: 50vw;
+        color: white;
+        text-align: center;
+        padding: 16px 0;
+        text-decoration: none;
+        font-family: AvenirRegular;
+        &-active {
+          border-bottom: 4px solid white;
+        }
+      }
+
+      &-locations {
+        width: 50vw;
+        color: white;
+        text-align: center;
+        padding: 16px 0;
+        text-decoration: none;
+        font-family: AvenirRegular;
+        &-active {
+          border-bottom: 4px solid white;
+        }
+      }
+    }
+  }
+}
+
+@include medium {
+  .header {
+    background: $black;
+    padding: 0 3.3333333333333335% 0 3.3333333333333335%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+
+    &-logo {
+      margin-right: 56px;
+    }
+    &__link {
+      width: 100%;
+
+      &-inventory {
+        width: 80px;
+        color: white;
+        text-align: center;
+        padding: 30.5px 0;
+        text-decoration: none;
+        font-family: AvenirRegular;
+        margin-right: 56px;
+        &-active {
+          padding-bottom: 25.5px;
+          border-bottom: 5px solid white;
+        }
+      }
+
+      &-locations {
+        width: 80px;
+        color: white;
+        text-align: center;
+        padding: 30.5px 0;
+        text-decoration: none;
+        font-family: AvenirRegular;
+        &-active {
+          padding-bottom: 25.5px;
+          border-bottom: 5px solid white;
+        }
+      }
+    }
+  }
+}
+
+@include huge {
+  .header {
+    background: $black;
+    padding: 0 12.5% 0 12.5%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+
+    &-logo {
+      margin-right: 56px;
+    }
+    &__link {
+      width: 100%;
+
+      &-inventory {
+        width: 80px;
+        padding: 0 10px;
+        color: white;
+        text-align: center;
+        padding: 30.5px 0;
+        text-decoration: none;
+        font-family: AvenirRegular;
+        margin-right: 46px;
+        &-active {
+          padding-bottom: 25.5px;
+          border-bottom: 4px solid white;
+        }
+      }
+
+      &-locations {
+        width: 80px;
+        color: white;
+        text-align: center;
+        padding: 30.5px 0;
+        text-decoration: none;
+        font-family: AvenirRegular;
+        &-active {
+          padding-bottom: 25.5px;
+          border-bottom: 4px solid white;
+        }
+      }
+    }
+  }
+}

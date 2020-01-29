@@ -1,0 +1,11 @@
+@mixin input {
+  border: 1px solid $mercury;
+  background-color: $alabaster;
+  height: 48px;
+  border-radius: 2px;
+  outline: none;
+
+  &:focus {
+    border: 1px solid $black;
+  }
+}

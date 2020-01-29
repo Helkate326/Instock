@@ -1,0 +1,185 @@
+.create * {
+  margin: unset;
+  padding: unset;
+  font-family: AvenirRegular;
+}
+.silver {
+  color: $silver;
+}
+
+@include small {
+  #label-black {
+    color: black;
+    font-size: 14px;
+  }
+  #instock-flex {
+    margin-top: 24px;
+  }
+
+  #optional {
+    height: 80px;
+    padding-bottom: 30px;
+  }
+  .create {
+    margin: 32px 5% 0 5%;
+
+    //   padding: 32px 0 0 0;
+
+    &-background {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background: white;
+      height: 5544px;
+    }
+
+    &-title {
+      margin-bottom: 8px;
+      font-family: AvenirBold;
+    }
+    &__container {
+      margin: 0 0 24px 0;
+      width: 100%;
+
+      &__switch {
+        margin: 0 0 24px 0;
+      }
+      &-switch {
+        margin-right: 16px;
+        height: 30px;
+      }
+      &-input {
+        border-style: unset;
+        width: 100%;
+        height: 48px;
+        border-radius: 5px;
+        border: 2px solid $mercury;
+        background: $alabaster;
+        padding-left: 7.2727272727272725%;
+
+        &::placeholder {
+          color: black;
+        }
+      }
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+    &__button {
+      &-save {
+        width: 100%;
+        height: 48px;
+        border: unset;
+        border-radius: 5px;
+        background: $darkblue;
+        color: white;
+        font-family: AvenirDemiBold;
+        margin-bottom: 16px;
+      }
+      &-cancel {
+        width: 100%;
+        height: 48px;
+        border: unset;
+        background: unset;
+        border-radius: 5px;
+        color: $darkblue;
+        font-family: AvenirDemiBold;
+      }
+    }
+  }
+}
+
+@include medium {
+  #label-black {
+    color: black;
+    font-size: 14px;
+  }
+  .create {
+    padding: 48px;
+    border-radius: 5px;
+    width: 576px;
+    background: white;
+
+    &-background {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    &-flex {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      font-family: AvenirDemiBold;
+    }
+    &__container {
+      &__switch {
+        width: 220px;
+      }
+      &-title {
+      }
+      &__switch {
+        width: 220px;
+      }
+      &-switch {
+        height: 30px;
+      }
+      &-input {
+        width: 220px;
+        height: 48px;
+        border: 2px solid $mercury;
+        background: $alabaster;
+        padding-left: 7.2727272727272725%;
+        border-radius: 5px;
+        &::placeholder {
+          color: black;
+        }
+        &-optional {
+          width: 480px;
+        }
+      }
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 48px;
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      &-save {
+        width: 190px;
+        height: 48px;
+        border: unset;
+        border-radius: 5px;
+        background: $darkblue;
+        color: white;
+        font-family: AvenirDemiBold;
+        order: 2;
+      }
+      &-cancel {
+        width: 190px;
+        height: 48px;
+        border: unset;
+        background: unset;
+        border-radius: 5px;
+        color: $darkblue;
+        font-family: AvenirDemiBold;
+        order: 1;
+      }
+    }
+  }
+}
